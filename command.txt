@@ -1,0 +1,352 @@
+    1  cf
+    2  cf login
+    3  cd workspace
+    4  wget https://raw.githubusercontent.com/billkable/patch-cnd-remote-desktop/main/bootstrap.sh
+    5  chmod u+x bootstrap.sh 
+    6  ./bootstrap.sh anarravu@ford.com
+    7  ls -al
+    8  pwd
+    9  cd pal-tracker/
+   10  git log --graph --decorate --oneline --all
+   11  git push origin main --tags
+   12  032bf6f835bc14e804d8b5a7675e8612b1ec8819
+   13  git remote
+   14  git remote -v
+   15  git remote add origin https://github.com/ankireddy75/pal-tracker.git
+   16  git push origin main --tags
+   17  git config --list
+   18  git config --global user.email ankireddyn@yahoo.com
+   19  git config --global user.name ankireddy
+   20  git config --list
+   21  gradle wrapper --gradle-version 6.6.1 --distribution-type all
+   22  git checkout spring-boot-solution build.gradle
+   23  cd src/main/java
+   24  ll io/piotal/pal/traker/
+   25  cd io/piotal/pal/traker/
+   26  ls -al
+   27  i PalTrackerApplication.java
+   28  vi PalTrackerApplication.java
+   29  ls -al
+   30  mv PalTrackerApplication.java PalTrackerApplication.java
+   31  cd ..
+   32  cd..
+   33  cd ..
+   34  pwd
+   35  cf --help
+   36  cf login --help
+   37  ./gradlew build
+   38  cf push --help
+   39  cf 
+   40  c
+   41  clear
+   42  cf push --help | more
+   43  cf push pal-tracker -p build/libs/pal-tracker.jar --random-route --no-start
+   44  cf set-env pal-tracker JBP_CONFIG_OPEN_JDK_JRE '{ jre: { version: 11.+ } }'
+   45  cf start pal-tracker
+   46  cf apps
+   47  cf app pal-tracker
+   48  cd ..
+   49  cd assignment-submission/
+   50  ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https:pal-tracker-reliable-topi-gf.apps.evans.pal.pivotal.io
+   51  ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https://pal-tracker-reliable-topi-gf.apps.evans.pal.pivotal.io
+   52  cd ..
+   53  cd pal-tracker/
+   54  git st
+   55  git add .
+   56  git commit -m "welcomecontroller added"
+   57  git push
+   58  git staus
+   59  git status
+   60  ./gradlew dependencies
+   61  ./gradlew boorun
+   62  ./gradlew bootrun
+   63  history
+   64  pwd
+   65  WELCOME_MESSAGE=howdy ./gradlew bootRun
+   66  ./gradlew bootRun
+   67  git st
+   68  git status
+   69  git add .
+   70  git commit -m "env controller added"
+   71  git push
+   72  git cherry-pick configuration-start
+   73  ./gradlew test
+   74  git add .
+   75  git commit -m "tests added"
+   76  git push
+   77  ./gradlew bootRun
+   78  ./gradlew build
+   79  cf push pal-tracker -p build/libs/pal-tracker.jar
+   80  cf logs pal-tracker
+   81  cf logs pal-tracker --recent
+   82  CF set-env WELCOME_MESSAGE="Howdy from Cloud Foundry"
+   83  cf set-env WELCOME_MESSAGE="Howdy from Cloud Foundry"
+   84  cf set-env WELCOME_MESSAGE "Howdy from Cloud Foundry"
+   85  cf set-env WELCOME_MESSAGE Howdy from Cloud Foundry
+   86  cf set-env WELCOME_MESSAGE 'Howdy from Cloud Foundry'
+   87  cf set-env WELCOME_MESSAGE Howdy from Cloud Foundry
+   88  cf set-env pal-tracker WELCOME_MESSAGE Howdy from Cloud Foundry
+   89  cf -set-env pal-tracker WELCOME_MESSAGE Howdy from Cloud Foundry
+   90  cf set-env pal-tracker WELCOME_MESSAGE Howdy from Cloud Foundry
+   91  cf set-env pal-tracker WELCOME_MESSAGE "Howdy from Cloud Foundry"
+   92  cf restage pal-tracker
+   93  cf restart pal-tracker
+   94  clear
+   95  ./gradlew build
+   96  cf delete pal-tracker
+   97  cf push pal-tracker -p build/libs/pal-tracker.jar
+   98  ./gradlew build
+   99  cf push pal-tracker -p build/libs/pal-tracker.jar
+  100  cd ..
+  101  cd assignment-submission/
+  102  ./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=https://pal-tracker-smart-squirrel-hf.apps.evans.pal.pivotal.io
+  103  cf env pal-tracker
+  104  cf env
+  105  cf ssh
+  106  cf ssh pal-tracker
+  107  ./gradlew build
+  108  cf set-env pal-tracker WELCOME_MESSAGE "Howdy from Cloud Foundry new"
+  109  cf restart pal-tracker
+  110  cf set-env pal-tracker WELCOME_MESSAGE "Howdy from Cloud Foundry new"
+  111  cf restage pal-tracker
+  112  cf set-env pal-tracker WELCOME_MESSAGE "Howdy from Cloud Foundry new12"
+  113  cf restage pal-tracker
+  114  cf set-env pal-tracker WELCOME_MESSAGE "Howdy from Cloud Foundry new1"
+  115  cf set-env pal-tracker WELCOME_MESSAGE "Howdy from Cloud Foundry"
+  116  pwd
+  117  cd ..
+  118  pwd
+  119  cd pal-tracker/
+  120  git cherry-pick pipeline-start
+  121  git st
+  122  git status
+  123  git chekout manifest.yml
+  124  git add .
+  125  git commit -m "manifest file added"
+  126  git push
+  127  git st
+  128  git cherry-pick pipeline-start
+  129  cf target
+  130  git st
+  131  git status
+  132  cf target
+  133  cf check-route pal-tracker-anki-narraula apps.evans.pal.pivotal.io
+  134  cf domains
+  135  git st
+  136  git status
+  137  git add .
+  138  git commit -m "pipe line added"
+  139  git push
+  140  cf apps
+  141  cd ..
+  142  cd assignment-submission/
+  143  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  144  cd ..
+  145  cd pal-tracker/
+  146  git status
+  147  cd ..
+  148  cd assignment-submission/
+  149  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  150  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io --stacktrace
+  151  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  152  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=http://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  153  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  154  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io --debug
+  155  clear
+  156  cf apps
+  157  curl pal-tracker-smart-squirrel-hf.apps.evans.pal.pivotal.io
+  158  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.ioal.io
+  159  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  160  git status
+  161  cd ..
+  162  cd pal-tracker/
+  163  git status
+  164  git add .
+  165  git commit -m "manifet modified"
+  166  git push
+  167  cd ..
+  168  cd assignment-submission/
+  169  ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  170  pwd
+  171  cd ..
+  172  cd pal-tracker/
+  173  git cherry-pick mvc-start
+  174  git st
+  175  git status
+  176  ./gradlew clean build
+  177  ./gradlew bootRun
+  178  git status
+  179  git add .
+  180  git status
+  181  git commit -m "time controller"
+  182  git push
+  183  cf app pal-tracker
+  184  cd ..
+  185  cd assignment-submission/
+  186  ./gradlew cloudNativeDeveloperRest -PserverUrl=http://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  187  cd ..
+  188  cd pal-tracker/
+  189  ./gradlew clean build
+  190  git add .
+  191  git commit -m "refactored"
+  192  git push
+  193  pwd
+  194  git cherry-pick migration-start
+  195  cf marketplace
+  196  cf create-service --help
+  197  cf marketplace
+  198  cf serice tracker-database
+  199  cf service tracker-database
+  200  cf services
+  201  mysql -uroot < databases/tracker/create_databases.sql
+  202  flyway -url="jdbc:mysql://localhost:3306/tracker_dev" -locations=filesystem:databases/tracker clean migrate
+  203  mysql -u tracker
+  204  cf bind-service --help
+  205  cf services
+  206  cf bind-service pal-tracker tracker-database
+  207  clear
+  208  cf env pal-tracker
+  209  clear
+  210  cf apps
+  211  cd ..
+  212  cd assignment-submission/
+  213  cd ..
+  214  cd pal-tracker/
+  215  git status
+  216  git add .
+  217  git commit -m "mysql added"
+  218  git push
+  219  cd ..
+  220  cd assignment-submission/
+  221  ./gradlew cloudNativeDeveloperDatabaseMigrations -PserverUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  222  cd ..
+  223  cd pal-tracker/
+  224  git status
+  225  cf ssh pal-tracker -i 0
+  226  pwd
+  227  git cherry-pick jdbc-start
+  228  ./gradlew clean build
+  229  ./gradlew clean
+  230  ./gradlew clean build
+  231  mysql -u tracker
+  232  flyway -url="jdbc:mysql://localhost:3306/tracker_test" -locations=filesystem:databases/tracker clean migrate
+  233  mysql -u tracker
+  234  ./gradlew clean build
+  235  git st
+  236  git status
+  237  git add .
+  238  git commit -m "jdbctemplate"
+  239  git push
+  240  git status
+  241  cd ..
+  242  cf apps
+  243  cd ..
+  244  cd workspace/
+  245  cd assignment-submission/
+  246  ./gradlew cloudNativeDeveloperDatabaseAccess -PserverUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  247  cd ..
+  248  cd pal-tracker/
+  249  pwd
+  250  cf ssh pal-tracker -i 0
+  251  cf logs pal-tracker
+  252  pwd
+  253  git cherry-pick actuator-start
+  254  ./gradlew compileJava
+  255  ./gradlew bootRun
+  256  ./gradlew clean build
+  257  ./gradlew bootRun
+  258  ./gradlew clean build
+  259  cf apps
+  260  cd ..
+  261  cd assignment-submission/
+  262  cd ..
+  263  cd pal-tracker/
+  264  git st
+  265  git status
+  266  git add .
+  267  git commit -m "acutor"
+  268  git push
+  269  cd ..
+  270  cd pal-tracker/
+  271  cf apps
+  272  cd ..
+  273  cd assignment-submission/
+  274  ./gradlew cloudNativeDeveloperHealthMonitoring -PserverUrl=http://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io/actuator
+  275  cd ..
+  276  cd pal-tracker/
+  277  pwd
+  278  git cherry-pick scaling-availability-start
+  279  git status
+  280  git add .
+  281  git commit -m "scale"
+  282  git push
+  283  git add manifest.yml
+  284  git cherry-pick --continue
+  285  ./gradlew clean build
+  286  cf delete pal-tracker -f
+  287  git status
+  288  cf apps
+  289  ./gradlew clean build
+  290  cf push
+  291  docker run -i -t --rm -e DURATION=300 -e NUM_USERS=10 -e REQUESTS_PER_SECOND=5 -e URL=http://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io  pivotaleducation/loadtest
+  292  ./gradlew clean build
+  293  cf push
+  294  cf apps
+  295  docker run -i -t --rm -e DURATION=300 -e NUM_USERS=10 -e REQUESTS_PER_SECOND=5 -e URL=http://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io pivotaleducation/loadtest
+  296  docker run -i -t --rm -e DURATION=300 -e NUM_USERS=100 -e REQUESTS_PER_SECOND=50 -e URL=http://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io pivotaleducation/loadtest
+  297  pwd
+  298  cf app
+  299  cf apps
+  300  git status
+  301  git add .
+  302  git commit -m "scale"
+  303  git push
+  304  cd ..
+  305  cd assignment-submission/
+  306  ./gradlew cloudNativeDeveloperScaling -PserverUrl=https://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  307  cd ..
+  308  cd pal-tracker/
+  309  git cherry-pick rolling-upgrade-solution
+  310  /gradlew clean build
+  311  ./gradlew clean build
+  312  cf apps
+  313  ./scripts/rolling-update.sh pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io
+  314  git st
+  315  git status
+  316  git pull
+  317  git add .
+  318  git commit -m "update"
+  319  git push
+  320  git status
+  321  cd ..
+  322  ls -al
+  323  unzip pal-tracker-distributed.zip 
+  324  ls -al
+  325  cd pal-tracker-distributed/
+  326  git log --graph --decorate --oneline --all
+  327  git push origin main --tags
+  328  git remote -v
+  329  git remote add origin https://github.com/ankireddy75/pal-tracker-distributed.git
+  330  git remote -v
+  331  git status
+  332  ls -al
+  333  rm pal-tracker-distributed-codebase.txt 
+  334  git status
+  335  git push origin main --tags
+  336  git status
+  337  history
+  338  history > command.txt
+  cf delete pal-tracker -f -r
+  cf delete-service-key tracker-database flyway-migration-key -f
+  cf delete-service-key tracker-database cf-mysql -f
+  cf delete-service tracker-database -f
+curl -v -XPOST -H"Content-Type: application/json" localhost:8084/time-entries/ -d"{\"projectId\": 1, \"userId\": 1, \"date\": \"2015-05-17\", \"hours\": 6}"
+
+  curl -v -XPOST -H"Content-Type: application/json" localhost:8082/stories -d"{\"projectId\": 1, \"name\": \"Find some reeds\"}"
+
+  curl -v -XPOST -H"Content-Type: application/json" localhost:8081/allocations -d"{\"projectId\": 1, \"userId\": 1, \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+
+curl -v -XPOST -H"Content-Type: application/json" localhost:8083/registration -d'{"name": "Pete"}'
+curl -v localhost:8083/users/1
+curl -v localhost:8083/accounts?ownerId=1
+curl -v -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Basket Weaving\", \"accountId\": 1}"
