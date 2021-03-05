@@ -1,0 +1,35 @@
+    1  cf
+    2  cf login
+    3  curl -v localhost:8080/time-entries
+    4  curl -v -XPOST -H"Content-Type: application/json" localhost:8080/time-entries -d"{\"projectId\": 1, \"userId\": 2, \"date\": \"2019-01-01\", \"hours\": 8}"
+    5  curl -v localhost:8080/time-entries/1
+    6  curl -v -XPUT -H"Content-Type: application/json" localhost:8080/time-entries/${TIME_ENTRY_ID} -d"{\"projectId\": 88, \"userId\": 99, \"date\": \"2019-01-01\", \"hours\": 8}
+    7  curl -v -XDELETE -H"Content-Type: application/json" localhost:8080/time-entries/${TIME_ENTRY_ID}
+    8  curl -v pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io/time-entries
+    9  curl -v -XPOST -H"Content-Type: application/json" pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io/time-entries -d"{\"projectId\": 1, \"userId\": 2, \"date\": \"2019-01-01\", \"hours\": 8}"
+   10  curl -v pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io/time-entries/1
+   11  curl -v -XPUT -H"Content-Type: application/json" pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io/time-entries/1 -d"{\"projectId\": 88, \"userId\": 99, \"date\": \"2019-01-01\", \"hours\": 8}"
+   12  curl -v -XDELETE -H"Content-Type: application/json" pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io/time-entries/1
+   13  show tables;
+   14  show tables
+   15  pwd
+   16  cd workspace/
+   17  cd pal-tracker/
+   18  git status
+   19  git add .
+   20  git commit -m "modified"
+   21  git push
+   22  pwd
+   23  curl -v -XPOST -H "Content-Length:0" localhost:8080/actuator/palTrackerFailure
+   24  curl -v -XDELETE localhost:8080/actuator/palTrackerFailure
+   25  curl -v -XPOST -H "Content-Length:0"  http://pal-tracker-pal-tracker-anki-narraula.apps.evans.pal.pivotal.io/actuator/palTrackerFailure
+   26  cd scripts/
+   27  ./scripts/setup-auto-scaling.sh
+   28  cd ..
+   29  ./scripts/setup-auto-scaling.sh
+   30  ./scripts/turn-off-autoscaling.sh
+   31  cd ..
+   32  cd pal-tracker-distributed/
+   33  ./gradlew applications:allocations-server:bootRun
+   34  jps -l
+   35  history > command_new.txt
